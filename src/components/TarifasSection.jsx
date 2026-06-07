@@ -2,10 +2,8 @@ import React from 'react';
 import SpriteAnimator from './SpriteAnimator';
 
 const programandoFrames = [
-  '/assets/personaje/programando/frame1.png',
-  '/assets/personaje/programando/frame2.png',
-  '/assets/personaje/programando/frame3.png',
-  '/assets/personaje/programando/frame4.png',
+  '/assets/personaje/programando/frame1.png','/assets/personaje/programando/frame2.png',
+  '/assets/personaje/programando/frame3.png','/assets/personaje/programando/frame4.png',
   '/assets/personaje/programando/frame5.png',
 ];
 
@@ -13,6 +11,7 @@ const TarifasSection = ({ t }) => {
   const r = t.tarifas;
   return (
     <section id="tarifas" className="py-16 sm:py-20 relative overflow-hidden bg-[#FDFBF7]">
+      
       {/* Aurora */}
       <div className="aurora-container">
         <div className="aurora-orbe aurora-orbe-azul animate-spin-slow" style={{ top: '20%', left: '-15%' }}></div>
@@ -38,6 +37,7 @@ const TarifasSection = ({ t }) => {
 
         {/* En móvil: 1 columna (virtual encima, presencial abajo). En md: 3 columnas con sprite en medio */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 items-stretch">
+          
           {/* Virtual card */}
           <div className="bg-white rounded-3xl border-2 border-[#7BB3F5] p-6 sm:p-8 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col">
             <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">💻</div>
