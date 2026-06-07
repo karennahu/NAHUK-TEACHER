@@ -42,8 +42,8 @@ const TarifasSection = ({ t }) => {
           <div className="bg-white rounded-3xl border-2 border-[#7BB3F5] p-6 sm:p-8 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col">
             <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">💻</div>
             <span className="text-xs font-extrabold px-3 py-1 rounded-full bg-blue-100 text-blue-800 mb-4 w-fit">{r.virtual}</span>
-            <div className="flex items-end gap-1 my-3 sm:my-4">
-              <span className="font-display font-extrabold text-4xl text-[#1A1209]">{r.price_v}</span> {/* <-- Modificado aquí */}
+            <div className="flex items-end gap-1 my-3 sm:my-4 flex-wrap">
+              <span className="font-display font-extrabold text-4xl text-[#1A1209]">{r.price_v}</span>
               <span className="font-body text-[#9B8060] text-sm mb-1 font-semibold">{r.unit}</span>
             </div>
             <p className="font-body text-sm text-[#5A4830] mb-4 sm:mb-5 leading-relaxed font-semibold">{r.sub_virtual}</p>
@@ -76,8 +76,8 @@ const TarifasSection = ({ t }) => {
             </div>
             <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">🏫</div>
             <span className="text-xs font-extrabold px-3 py-1 rounded-full bg-amber-100 text-amber-800 mb-4 w-fit">{r.presencial}</span>
-            <div className="flex items-end gap-1 my-3 sm:my-4">
-              <span className="font-display font-extrabold text-4xl text-[#1A1209]">{r.price_p}</span> {/* <-- Modificado aquí */}
+            <div className="flex items-end gap-1 my-3 sm:my-4 flex-wrap">
+              <span className="font-display font-extrabold text-4xl text-[#1A1209]">{r.price_p}</span>
               <span className="font-body text-[#9B8060] text-sm mb-1 font-semibold">{r.unit}</span>
             </div>
             <p className="font-body text-sm text-[#5A4830] mb-4 sm:mb-5 leading-relaxed font-semibold">{r.sub_presencial}</p>
