@@ -94,7 +94,7 @@ const translations = {
       h1_a:'Does your child', h1_stress:'struggle', h1_b:'with homework or feel', h1_bore:'bored', h1_c:'with school videos?',
       sub:'', sub_bold:'100% personalized learning', sub2:'for all ages. We turn difficult subjects into',
       sub_draw:'drawings', sub_game:'games', sub_and:'and', sub_ana:'analogies', sub3:'tailored to each student.',
-      price_label:'Transparent price', price:'$65 MXN', price_unit:'/ hour',
+      price_label:'Transparent price', price:'$100 MXN', price_unit:'/ hour',
       cta1:'🎨 Design my Child\'s Syllabus', cta2:'📱 WhatsApp Now',
       trust1:'Municipal award', trust2:'Computer Engineer', trust3:'In-person & Online',
       stat_logros:'Awards', stat_alumnos:'Students', badge:'NAHUK Experience', explore:'Explore',
