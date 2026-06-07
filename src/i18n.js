@@ -55,7 +55,7 @@ const translations = {
       h2:'Sin sorpresas, sin letra chica',
       sub:'Precio accesible',
       virtual:'Clase Virtual', presencial:'Clase Presencial',
-      price:'$100.00 MXN', unit:'/ Hora',
+      price_v:'$75.00 MXN', price_p:'$100.00 MXN', unit:'/ Hora', // <-- Cambiado aquí de forma independiente
       sub_virtual:'Desde casa a través de plataformas interactivas.',
       sub_presencial:'Atención personalizada en Toluca y alrededores.',
       popular:'⭐ Más Solicitada',
@@ -142,7 +142,7 @@ const translations = {
       h2:'No surprises, no fine print',
       sub:'Affordable price.',
       virtual:'Online Class', presencial:'In-person Class',
-      price:'$100.00 MXN', unit:'/ Hour',
+      price_v:'$75.00 MXN', price_p:'$100.00 MXN', unit:'/ Hour', // <-- Cambiado aquí de forma independiente
       sub_virtual:'From home through interactive platforms.',
       sub_presencial:'Personalized attention in Toluca and surroundings.',
       popular:'⭐ Most Requested',
@@ -175,5 +175,3 @@ const translations = {
     lang_switch: 'Español',
   },
 };
-
-export default translations;
