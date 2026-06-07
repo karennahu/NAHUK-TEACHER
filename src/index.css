@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { background-color: #FDFBF7; color: #2D2D2D; -webkit-font-smoothing: antialiased; font-family: 'DM Sans', sans-serif; }
+section { scroll-margin-top: 72px; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #FDFBF7; }
+::-webkit-scrollbar-thumb { background: #C9A96E; border-radius: 3px; }
+
+@keyframes fadeInUp { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:translateY(0); } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes float { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-12px); } }
+@keyframes pulse-gold { 0%,100% { box-shadow:0 0 0 0 rgba(201,169,110,0.5); } 50% { box-shadow:0 0 0 10px rgba(201,169,110,0); } }
+@keyframes slideIn { from { opacity:0; transform:scale(0.94) translateY(12px); } to { opacity:1; transform:scale(1) translateY(0); } }
+@keyframes spin-slow { from { transform:rotate(0deg); } to { transform:rotate(360deg); } }
+
+.animate-fadeInUp { animation: fadeInUp 0.7s ease-out both; }
+.animate-fadeIn { animation: fadeIn 0.45s ease-out both; }
+.animate-float { animation: float 3.8s ease-in-out infinite; }
+.animate-pulse-gold { animation: pulse-gold 2.2s ease-in-out infinite; }
+.animate-slideIn { animation: slideIn 0.35s ease-out both; }
+.animate-spin-slow { animation: spin-slow 20s linear infinite; }
+
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+.delay-5 { animation-delay: 0.5s; }
+.delay-6 { animation-delay: 0.6s; }
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #C9A96E 0%, #E8C98A 45%, #A0814A 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.bg-sand { background-color: #F5EFE6; }
+.bg-cream { background-color: #FDFBF7; }
+
+/* --- Aurora Holográfica --- */
+.aurora-container {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.90;
+  filter: blur(80px); /* Reducido de 100px para móvil */
+}
+
+.aurora-orbe {
+  position: absolute;
+  border-radius: 50%;
+}
+
+/* Orbes reducidos en móvil para no dominar la pantalla */
+.aurora-orbe-azul {
+  top: -10%;
+  right: -5%;
+  width: 300px;  /* Era 550px */
+  height: 300px;
+  background: radial-gradient(circle, #90E0EF 0%, transparent 70%);
+}
+
+.aurora-orbe-lila {
+  bottom: -5%;
+  left: -10%;
+  width: 320px;  /* Era 600px */
+  height: 320px;
+  background: radial-gradient(circle, #E0AAFF 0%, transparent 70%);
+}
+
+.aurora-orbe-rosa {
+  top: 35%;
+  right: -10%;
+  width: 280px;  /* Era 500px */
+  height: 280px;
+  background: radial-gradient(circle, #FFB5A7 0%, transparent 70%);
+}
+
+/* En pantallas grandes, orbes más grandes */
+@media (min-width: 1024px) {
+  .aurora-orbe-azul  { width: 550px; height: 550px; }
+  .aurora-orbe-lila  { width: 600px; height: 600px; }
+  .aurora-orbe-rosa  { width: 500px; height: 500px; }
+  .aurora-container  { filter: blur(100px); }
+}
+
+/* --- Tipografía base --- */
+body {
+  color: #1A1209 !important;
+  font-size: 16px;
+}
+
+/* Textos café → más oscuros */
+.text-\[\#5A4830\], .text-\[\#7A5A30\], .text-\[\#3A2810\] {
+  color: #1A1209 !important;
+  font-weight: 700 !important;
+}
+
+/* Párrafos de cuerpo */
+p.font-body {
+  font-size: 1rem !important;
+  line-height: 1.6 !important;
+}
+
+/* Eyebrows dorados */
+.text-\[\#C9A96E\] {
+  color: #7A5A30 !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.1em !important;
+}
+
+/* Textos muy pequeños más legibles */
+.text-xs  { font-size: 0.8125rem !important; }  /* 13px en lugar de 12px */
+.text-\[10px\] { font-size: 0.75rem !important; color: #5A4830 !important; }
+.text-\[11px\] { font-size: 0.75rem !important; }
+.text-\[9px\]  { font-size: 0.6875rem !important; }
+
+/* Evita desborde en cualquier contenedor */
+img { max-width: 100%; height: auto; }
+* { word-break: break-word; }
