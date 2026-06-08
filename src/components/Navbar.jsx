@@ -19,7 +19,7 @@ const Navbar = ({ t, lang, toggleLang }) => {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-[#4E382D]/95 backdrop-blur-sm shadow-sm' : 'bg-transparent'}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-[#C8AA7D]/95 backdrop-blur-sm shadow-sm' : 'bg-transparent'}`}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-[72px] flex items-center justify-between gap-4">
         <a href="#hero" className="flex items-center gap-2 sm:gap-3 group shrink-0">
           <img src="/assets/logos/NaHuK Dorado (3).png" alt="KNH" className="h-8 sm:h-10 w-auto object-contain group-hover:scale-105 transition-transform" />
